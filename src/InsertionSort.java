@@ -34,7 +34,8 @@ public class InsertionSort {
     }
 
     public static void main(String[] args) {
-        Comparable[] arr = {4,5,8,1,2,7,6,9,3,0};
+      // Comparable[] arr = {4,5,8,1,2,7,6,9,3,0};
+        Comparable[] arr = {'m','a','n','i','s','h'};
         InsertionSort obj = new InsertionSort();
         obj.iSort(arr, 0, arr.length);
         obj.printArray(arr);
