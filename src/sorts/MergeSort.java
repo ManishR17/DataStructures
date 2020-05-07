@@ -14,7 +14,7 @@ j++;}
 else if(j>high){
     a[k]=aux[i];
     i++;}
-else if(less(a[j],a[low])){
+else if(less(aux[j],aux[i])){
     a[k]=aux[j];
     j++;}
 else{
@@ -24,7 +24,7 @@ i++;}
         }
     }
     public static void sort(Comparable[] a,Comparable[] aux,int low,int high){
-            if(low<=high) {
+            if(low>=high) {
                 return;
             }
         else {
@@ -53,7 +53,7 @@ i++;}
     public static void main(String[] args)
     {
         MergeSort obj=new MergeSort();
-        Comparable[] arr={1,5,8,9,6,4,7,2,3,0};
+        Comparable[] arr={4,3,2,1,0,-1};
         obj.sort(arr);
         obj.printArray(arr);
 
