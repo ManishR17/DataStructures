@@ -27,8 +27,9 @@ public class SelectionSort {
     public void printArray(Comparable[] arr)
     {
         for(Comparable i: arr) {
-            System.out.println("sorted array:" + i + " ");
+            System.out.print( i + " ");
         }
+        System.out.println();
         //System.out.println();
 
     }

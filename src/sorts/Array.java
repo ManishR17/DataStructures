@@ -2,7 +2,7 @@ import java.lang.*;
 
 public class Array {
     int arr[]=new int[5];
-    int top;
+    int top=0;
 
 
 
