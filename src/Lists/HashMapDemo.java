@@ -7,7 +7,7 @@ import java.util.Map;
 public class HashMapDemo {
     public static void main(String[] args)
     {
-        Map<Integer,String> mp=new HashMap<Integer,String>();
+        Map<Integer,String> mp=new HashMap<Integer,String>();//Tree map for sorted elements
         {
             mp.put(1, "harley");
             mp.put(2, "ktm");
