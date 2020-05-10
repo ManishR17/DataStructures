@@ -7,10 +7,12 @@ public class Recursion {
         else
             x=n*fact(n-1);
         return x;
-    }
+        }
+
     public static void main(String[] args) {
         Recursion obj = new Recursion();
-        int r = obj.fact(5);
-        System.out.println(r);
+       int r = obj.fact(5);
+
+        System.out.print(r);
     }
 }
