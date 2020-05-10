@@ -8,4 +8,4 @@ public class SumArray {
             sum = sum + i;
         System.out.print(sum);
     }
-}
+    }
