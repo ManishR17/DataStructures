@@ -1,6 +1,6 @@
 import java.lang.*;
 
-public class Array {
+public class Stack {
     int arr[]=new int[5];
     int top=0;
 
@@ -38,7 +38,7 @@ public class Array {
             System.out.println("Stack:" +n + " ");
     }
     public static void main(String args[]){
-        Array arr1=new Array();
+        Stack arr1=new Stack();
         arr1.push(10);
         arr1.push(20);
         arr1.push(30);
