@@ -15,6 +15,7 @@ public class UnionFind {
     }
     public void union(int p,int q)
     {
+        
         for(int i=0;i<id.length;i++)
             if(id[i]==id[p])
                 id[i]=id[q];
@@ -28,6 +29,7 @@ public class UnionFind {
         while(N!=0) {
             int p = scan.nextInt();
             int q = scan.nextInt();
+
             if (!uf.connected(p, q)) {
                 uf.union(p, q);
                 System.out.println(p + " " + q);
