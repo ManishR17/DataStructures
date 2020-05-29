@@ -33,6 +33,8 @@ public class UnionFind {
             if (!uf.connected(p, q)) {
                 uf.union(p, q);
                 System.out.println(p + " " + q);
+
+
             }
         }
     }
