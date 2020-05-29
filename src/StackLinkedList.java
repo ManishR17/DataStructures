@@ -1,29 +1,27 @@
 import java.util.*;
-public class StackLinkedList {
+public  class StackLinkedList<T> {
     private node head=null;
-    public static class node{
-        String item;
+    public class node{
+        T item;
         node next;
     }
     public boolean isEmpty()
     {
         return head==null;
     }
-    public void push(String item) {
+    public void push(T item) {
 
            node second = head;
         head = new node();
         head.item = item;
         head.next = second;
     }
-    public String pop()
+    public T pop()
     {
 
-        String item=head.item;
+        T item=head.item;
         head=head.next;
-
-       return item;
-
+        return item;
     }
     public static void main(String[] args)
     {
@@ -33,9 +31,9 @@ public class StackLinkedList {
 
 
 
-        StackLinkedList sll=new StackLinkedList();
+        StackLinkedList<String> sll=new StackLinkedList<>();
 
-        String item=" ";
+        String  item=" ";
         while(!item.isEmpty()) {
              item=scan.nextLine();
             if (item.equals("-"))
