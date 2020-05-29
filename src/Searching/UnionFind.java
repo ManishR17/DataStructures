@@ -15,7 +15,7 @@ public class UnionFind {
     }
     public void union(int p,int q)
     {
-        
+
         for(int i=0;i<id.length;i++)
             if(id[i]==id[p])
                 id[i]=id[q];
