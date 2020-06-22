@@ -1,3 +1,4 @@
+package sorts;
 
 public class SelectionSort {
      int i,min;
