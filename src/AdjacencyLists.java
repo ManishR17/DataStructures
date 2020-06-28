@@ -1,8 +1,9 @@
 import java.util.*;
-public class ArrayOfList {
+public class AdjacencyLists {
     public static void main(String[] args)
     {
-        List<Integer> l[]= new LinkedList[10];
+        List<Integer> l[];
+        l=new LinkedList[10];
         for(int i=0;i<l.length;i++)
             l[i]=new LinkedList<>();
         l[0].add(02);l[0].add(03);
