@@ -28,10 +28,10 @@ public class Graph
          for(int i=0;i<G.length;i++)
              G[i]=new LinkedList<Edge>();
     }
-    boolean isConnected(int u,int v)
+    boolean isConnected(int u,int v,int w)
     {
         for(Edge i:G[u])
-            if(i.v==v) return true;
+            if(i.v==v&&i.w==w) return true;
             return false;
     }
     public void addEdge(int u,int v,int w)
@@ -48,13 +48,14 @@ public class Graph
     }
     public static void main(String[] args)
     {
-        Graph g=new Graph(10);
-        g.addEdge(0,2,10);
-        g.addEdge(1,5,15);
-       g.addEdge(7,12,5);
-        g.addEdge(5,13,6);
+        Graph g=new Graph(5);
+        g.addEdge(0,1,4);
+        g.addEdge(1,2,0);
+       g.addEdge(2,3,1);
+        g.addEdge(3,4,2);
+        g.addEdge(4,3,0);
         System.out.println(g);
-        System.out.println(g.isConnected(1,5));
+        System.out.println(g.isConnected(4,3,0));
 
 
     }
