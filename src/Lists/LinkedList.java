@@ -1,18 +1,15 @@
 package Lists;
 
 public class LinkedList {
-
-   public  class Node
+    public  class Node
    {
 int data;
        Node next;
    }
     Node head;
    Node tail;
-
-    public void insert( int data)
+    public void insertFront( int data)
     {
-
         if (isEmpty())
         {
             Node newnode = new Node();
@@ -24,36 +21,30 @@ int data;
             newnode.next = head;
             head = newnode;
         }
-        System.out.print("-->"+data +" ");
+              System.out.print(data + "-->");
     }
-        public void  remove( )
+        public void  removeFront( )
             {
 
                 if(isEmpty()) {
                     return ;
                 } else head = head.next;
                 return;
-
-
-
             }
             public boolean isEmpty()
     {
         return head==null;
     }
-
-
         public static void main(String[] args)
         {
             LinkedList ll=new LinkedList();
-            ll.insert(10);
-            ll.insert(20);
-            ll.insert(30);
-            ll.insert(40);
-              ll.remove();
-            
-
-
+            Node tail=null;
+            ll.insertFront(10);
+            ll.insertFront(20);
+            ll.insertFront(30);
+            ll.insertFront(40);
+            System.out.print(tail);
+              ll.removeFront();
         }
 
 }
